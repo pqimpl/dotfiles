@@ -8,7 +8,7 @@ Once I am comfortable with my setup, I will create a shell script to replicate t
 
 ## Screenshots
 
-![App Screenshot](https://github.com/dashfetch/dotfiles/blob/master/screenshots/screenshot1.png)
+![App Screenshot](./screenshots/screenshot1.png)
 
 ## Stuff that need work
 
