@@ -1,0 +1,63 @@
+* {
+  bg: #1a1b26;
+  bg-alt: #8386AA;
+  bg-alter: #11121D;
+  fg: #c0caf5;
+  fg-alt: #15161E;
+
+  window-border-color: #4A5057;
+
+  background-color: @bg;
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+element {
+  padding: 12;
+  text-color: @fg;
+}
+
+element selected {
+  text-color: @bg-alt;
+}
+
+element-text {
+  background-color: inherit;
+  text-color: inherit;
+}
+
+entry {
+  background-color: @bg;
+  padding: 12;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [entry];
+}
+
+listview {
+  background-color: @bg;
+  columns: 1;
+  lines: 8;
+}
+
+mainbox {
+  background-color: @bg;
+  children: [inputbar, listview];
+}
+
+prompt {
+  background-color: @bg;
+  enabled: true;
+  padding: 12 0 0 12;
+  text-color: @fg;
+}
+
+window {
+  transparency: "real";
+  width: 600;
+}

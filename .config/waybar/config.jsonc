@@ -1,0 +1,91 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", 
+    "position": "top",  
+   
+
+    // Choose the order of the modules
+    "modules-left": [
+        "hyprland/workspaces",
+	"custom/sep2",
+        "hyprland/window"
+    ],
+    "modules-center":[
+    ],
+
+    "modules-right": [
+        "network",
+	"bluetooth",
+        "wireplumber",
+        "battery",
+        "clock"
+    ],
+
+    // Modules configuration
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}",
+	      "persistent-workspaces": {
+            "*" : 9
+        }
+    },
+    "hyprland/window" : {
+	      "format":"{title}",
+        "max-length": 30,
+        "seperate-outputs": false
+    },
+    "tray": {
+         "icon-size": 21,
+         "spacing": 7,
+         "icons": {
+           "blueman": "bluetooth"
+         }
+    },
+    "clock": {
+      	"format": "{:%H:%M}  ",
+        "format-alt": "{:%Y-%m-%d}  ",
+	"tooltip-format":"<tt><small>{calendar}</small></tt>"
+   },
+    "memory": {
+        "format": "Mem: {used}GiB"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+	"tooltip-format":"{timeTo}",
+        "interval":2,
+        "format": "{capacity}% {icon}",
+        "format-plugged": "{capacity}% ",
+        "format-icons": [" ", " ", " ", " ", " "]
+    },
+    "network": {
+        "format": "{essid}  ",
+        "format-disconnected": "Offline  ",
+	"tooltip-format":"{essid}"
+    },
+    "bluetooth":{
+      "format-connected": "{device_alias} ",
+      "format-on": "None ",
+      "tooltip-format":"{status}",
+      "on-click":"foot -e bluetui"
+    },
+    "wireplumber": {
+    	"format": "{volume}% {icon}",
+   	"format-muted": " ",
+    	"on-click": "foot -e wiremix",
+    	"format-icons": ["", "", " ", " "]
+    },
+    "custom/sep": {
+        "format" : "|",
+        "interval" : 0
+    },
+    "custom/sep2": {
+	"format": " ",
+	"interva;": 0
+    }
+}

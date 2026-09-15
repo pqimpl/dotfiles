@@ -1,0 +1,41 @@
+[global]
+    monitor = 0
+    follow = keyboard
+    width = (250, 500)
+    height = (0, 750)
+    offset = (17, 26)
+    padding = 5
+    horizontal_padding = 5
+    gap_size = 3
+    transparency = 35
+    frame_width = 1
+    frame_color="#607566"
+    font = Libertinus Mono 11
+    corner_radius = 0
+    min_icon_size = 32
+    max_icon_size = 32
+    format = "<b>%s</b>\n%b"
+[urgency_low]
+    background = "#16161e"
+    foreground = "#c0caf5"
+    frame_color = "#c0caf5"
+    timeout = 3
+    # Icon for notifications with low urgency, uncomment to enable
+    icon = /home/dash/.config/dunst/normal.png
+
+[urgency_normal]
+    background = "#1a1b26"
+    foreground = "#c0caf5"
+    frame_color = "#c0caf5"
+    timeout = 3
+    # Icon for notifications with normal urgency, uncomment to enable
+    icon = /home/dash/.config/dunst/normal.png
+
+[urgency_critical]
+    background = "#292e42"
+    foreground = "#db4b4b"
+    frame_color = "#db4b4b"
+    timeout = 0
+    # Icon for notifications with critical urgency, uncomment to enable
+    icon = /home/dash/.config/dunst/critical.png
+
